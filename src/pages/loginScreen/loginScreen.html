@@ -1,19 +1,33 @@
 <ion-header>
     <ion-navbar>
         <ion-title>
-            Logged on
+            Login
         </ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <p>
-        Welcome
-        <b>fam.</b>
+<ion-content style="background-color: lightslategray" padding>
+    <ion-list>
+        <ion-item>
+            <ion-input type="text" placeholder="Username/Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+        <button ion-button style="color: whitesmoke" (click)="profileSend()">
+            Login
+        </button>
+    </ion-list>
+
+    <p style="color: lightblue">
+        <a style="color: lightblue" padding href="https://www.blahgetbah/">
+            <b>Forgot Password?</b>
+        </a>
+        <b>Remember Me?</b>
+        <ion-checkbox></ion-checkbox>
     </p>
-    <div>
-        <ion-img width="200" height="200" src="/assets/pokeswag.png"></ion-img>
-    </div>
-    Are you cool?   <ion-checkbox></ion-checkbox>
-    <div><ion-footer>BEAST MODE</ion-footer></div>
+
+
 </ion-content>

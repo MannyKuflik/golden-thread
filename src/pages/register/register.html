@@ -1,0 +1,54 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Logged on
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content style="background-color: lightslategray" padding>
+    <ion-list>
+        <div padding style="color:whitesmoke">
+            <b>Personal Info</b>
+        </div>
+
+        <ion-item>
+            <ion-input type="text" placeholder="First Name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Last Name"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="password" placeholder="Password"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="password" placeholder="Confirm Password"></ion-input>
+        </ion-item>
+        <br>
+        <div padding style="color:whitesmoke">
+            <b>Billing Address</b>
+        </div>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Street Address"></ion-input>
+            <ion-input type="text" placeholder="City"></ion-input>
+            <ion-input type="text" placeholder="State"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-input type="text" placeholder="Country"></ion-input>
+            <ion-input type="text" placeholder="Zip Code"></ion-input>
+        </ion-item>
+
+    </ion-list>
+    <div>
+        <button ion-button (click)="submitClicker()"> Join the Giving Community! </button>
+    </div>
+</ion-content>
