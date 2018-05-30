@@ -10,6 +10,7 @@ import { ProfilePage } from '../profile/profile';
 })
 export class HomePage {
 
+
   constructor(public navCtrl: NavController) {
 
   }

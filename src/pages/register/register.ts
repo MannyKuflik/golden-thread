@@ -10,12 +10,24 @@ import { ProfilePage } from '../profile/profile';
   templateUrl: 'register.html'
 })
 export class RegisterPage {
+fname: string;
+lname: string;
+email: string;
+street: string;
+city: string;
+state: string;
+country: string;
+zip: string;
 
   constructor(public navCtrl: NavController) {
 
   }
   submitClicker(){
-    this.navCtrl.push(ProfilePage);
+    let address = this.street + ", " + this.city + " " + this.state + " " + this.country + " " + this.zip;
+    let full_name = this.fname + " " + this.lname;
+    this.navCtrl.push(ProfilePage, {
+      username: full_name, email: this.email, address: address
+    });
   }
 
 }

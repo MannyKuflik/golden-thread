@@ -11,12 +11,20 @@ import { ProfilePage } from '../profile/profile';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController) {
+public username: string;
+public password: string;
 
+  constructor(public navCtrl: NavController) {
   }
 
   profileSend() {
-    this.navCtrl.push(ProfilePage);
+    this.navCtrl.push(ProfilePage, {
+      username: this.username
+    });
+  }
+
+  alert(){
+    alert("username: " + this.username + ", password: " + this.password);
   }
 
 }

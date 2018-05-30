@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams} from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
 import { LoginPage } from '../loginScreen/loginScreen';
+import { CharityListPage } from '../charity-list/charity-list';
 
 
 @Component({
@@ -11,12 +12,23 @@ import { LoginPage } from '../loginScreen/loginScreen';
 })
 export class ProfilePage {
 
-  constructor(public navCtrl: NavController) {
+  public username: string;
+  public email: string;
+  public address: string;
 
+
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  this.username = navParams.get("username");
+  this.email = navParams.get("email");
+  this.address = navParams.get("address");
   }
 
   logout() {
     this.navCtrl.push(HomePage);
+  }
+
+  charityList(){
+    this.navCtrl.push(CharityListPage);
   }
 
 }

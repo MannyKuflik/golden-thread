@@ -12,33 +12,23 @@
             <ion-img src="/assets/prof.png" width="200" height="200"></ion-img>
         </div>
         <ion-title>
-            <b style="color:floralwhite">Name:</b> Blah BlahBlah
+            <b style="color:floralwhite">Name:</b> {{username}}
         </ion-title>
         <ion-title>
-            <b style="color:floralwhite">Email:</b> blahblah@blah.com
+            <b style="color:floralwhite">Email:</b> {{email}}
 
         </ion-title>
         <ion-title>
-            <b style="color:floralwhite">Billing Address:</b> 15 Blah St, Blah, BL, USA 10528
+            <b style="color:floralwhite">Billing Address:</b> {{address}}
         </ion-title>
         <hr>
-        <ion-title>
-            <b style="color:floralwhite">Subscribed Charities:</b>
-        </ion-title>
-        <ul style="color:gainsboro">
-            Charity A
-            <br> Charity B
-            <br> Charity C
-            <br> Charity D
-        </ul>
-
-        <a style="color: lightblue" padding href="https://www.blahgetbah/">
-            <b>Donation History</b>
-        </a>
-
-        <a style="color: lightblue" padding href="https://www.blahgetbah/">
-            <b>Settings</b>
-        </a>
+        <ion-buttons>
+            <button style="color:navy" (click)="charityList()">Subscribed Charities</button>
+            <br>
+            <button style="color:navy" (click)="charityList()">Donation History</button>
+            <br>
+            <button style="color:navy" (click)="charityList()">Settings</button>
+        </ion-buttons>
         <br>
         <br>
         <button ion-button padding (click)="logout()"> Logout </button>

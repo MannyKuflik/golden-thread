@@ -9,11 +9,11 @@
 <ion-content style="background-color: lightslategray" padding>
     <ion-list>
         <ion-item>
-            <ion-input type="text" placeholder="Username/Email"></ion-input>
+            <ion-input type="text" placeholder="Username/Email" [(ngModel)]="username"></ion-input>
         </ion-item>
 
         <ion-item>
-            <ion-input type="password" placeholder="Password"></ion-input>
+            <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
         </ion-item>
 
         <button ion-button style="color: whitesmoke" (click)="profileSend()">
