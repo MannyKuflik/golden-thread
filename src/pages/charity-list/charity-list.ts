@@ -17,7 +17,7 @@ export class CharityListPage {
 
   item = [
     {
-      id: 1, name: "Charity A", mission: "we help people... Lorem ipsum " +
+      id: 1, name: "Charity A", mission: "We help people... Lorem ipsum " +
         "dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
         "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad" +
         " minim veniam, quis nostrud exercitation ullamco laboris nisi " +
@@ -25,10 +25,10 @@ export class CharityListPage {
         "reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
         " nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
         " sunt in culpa qui officia deserunt mollit anim id est laborum ",
-      contact: "phone: 1-800-555-5484 | address: 22 Beverly Road, Awesome City, Kansas, USA 11254"
+      contact: "Phone: 1-800-555-5484 | Address: 22 Beverly Road, Awesome City, Kansas, USA 11254"
     },
     {
-      id: 2, name: "Charity B", mission: "we help dogs... Lorem ipsum " +
+      id: 2, name: "Charity B", mission: "We help dogs... Lorem ipsum " +
         "dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
         "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad" +
         " minim veniam, quis nostrud exercitation ullamco laboris nisi " +
@@ -36,10 +36,10 @@ export class CharityListPage {
         "reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
         " nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
         " sunt in culpa qui officia deserunt mollit anim id est laborum ",
-      contact: "phone: 1-808-826-7762 | address: 50 Lit Street, Alberto, VA, USA 10624"
+      contact: "Phone: 1-808-826-7762 | Address: 50 Lit Street, Alberto, VA, USA 10624"
     },
     {
-      id: 3, name: "Charity C", mission: "we help people... Lorem ipsum " +
+      id: 3, name: "Charity C", mission: "We help people... Lorem ipsum " +
         "dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
         "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad" +
         " minim veniam, quis nostrud exercitation ullamco laboris nisi " +
@@ -47,10 +47,10 @@ export class CharityListPage {
         "reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
         " nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
         " sunt in culpa qui officia deserunt mollit anim id est laborum ",
-      contact: "phone: 1-8888-678-2314 | address: 111 41st St, Phildelphia, PA, USA 10904"
+      contact: "Phone: 1-8888-678-2314 | Address: 111 41st St, Phildelphia, PA, USA 10904"
     },
     {
-      id: 4, name: "Charity D", mission: "we help the environment... Lorem ipsum " +
+      id: 4, name: "Charity D", mission: "We help the environment... Lorem ipsum " +
         "dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
         "tempor incididunt ut labore et dolore magna aliqua. Ut enim ad" +
         " minim veniam, quis nostrud exercitation ullamco laboris nisi " +
@@ -58,7 +58,7 @@ export class CharityListPage {
         "reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
         " nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
         " sunt in culpa qui officia deserunt mollit anim id est laborum ",
-      contact: "phone: 1-914-255-3467 | address: 15 Franklin lane, Harrison, Ny USA 10528"
+      contact: "Phone: 1-914-255-3467 | Address: 15 Franklin lane, Harrison, Ny USA 10528"
     }
   ];
 

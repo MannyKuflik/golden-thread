@@ -6,26 +6,31 @@
 -->
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar align="right">
     <ion-title>Charities List</ion-title>
+    <img src="/assets/i-charity.png" style="background-color:snow" width="50">
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content style="background-color: lightslategray" padding>
+<ion-content align="left " style="background-color: lightslategray" padding>
   <ion-list>
     <button id=0 ion-item (click)="charityClick(0)">
-      Charity A
+      <ion-img align="center" height="25" width="25" src="/assets/placeholder.png"></ion-img>
+      <label padding style="font-size: 20px">~ Charity A ~</label>
     </button>
     <button id=1 ion-item (click)="charityClick(1)">
-      Charity B
+      <ion-img align="center" height="25" width="25" src="/assets/placeholder.png"></ion-img>
+      <label padding style="font-size: 20px">~ Charity B ~</label>
     </button>
     <button id=2 ion-item (click)="charityClick(2)">
-      Charity C
+      <ion-img align="center" height="25" width="25" src="/assets/placeholder.png"></ion-img>
+      <label padding style="font-size: 20px">~ Charity C ~</label>
     </button>
     <button id=3 ion-item (click)="charityClick(3)">
-      Charity D
+      <ion-img align="center" height="25" width="25" src="/assets/placeholder.png"></ion-img>
+      <label padding style="font-size: 20px">~ Charity D ~</label>
     </button>
   </ion-list>
 </ion-content>

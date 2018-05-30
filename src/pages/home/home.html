@@ -1,63 +1,59 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      <ion-spinner name="bubbles" align="center"></ion-spinner>
-      <b>i-Charity</b>
-      <div></div>
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+
 
 <ion-content style="background-color: lightslategray" padding>
-  <div>
-    <ion-img height="200" src="/assets/icharity.png" style="width:100%"></ion-img>
-  </div>
-  <h1 style="color: lightblue">
-    Our Mission
-  </h1>
-  <p style="color: lightcyan">
-    <b>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      <b style="color: maroon"> make the world a better place</b> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco
-      <i>laboris nisi ut aliquip ex ea commodo consequat</i>. Duis aute irure dolor in reprehenderit in voluptate velit esse
-      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-      mollit anim id est laborum
-    </b>
-  </p>
-  <h6 style="color: lightblue"> "Blah Blah Blah"</h6>
-  <div style="color: lightcyan">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+  <div align="center" >
+    <img padding  src="/assets/i-charity.png" style="width:75%; border:100px; background-color:snow">
   </div>
   <br>
-  <div style="color: lightcyan">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  </div>
-  <br>
-  <div style="color: lightcyan">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-  </div>
+  <ion-list>
+    <ion-item-divider style="color: snow; background-color: steelblue">
+      <h1><b>Our Mission</b></h1>
+    </ion-item-divider>
+    <p style="color: lightcyan">
+      <b>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        <b style="color: midnightblue; font-size: 20px"> make the world a better place</b> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco
+        <i>laboris nisi ut aliquip ex ea commodo consequat</i>. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum
+      </b>
+    </p>
+    <h6 style="color: skyblue; font-size: 30px">"Blah Blah Blah"</h6>
+    <div style="color: lightcyan">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+    <br>
+    <div style="color: lightcyan">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+    <br>
+    <div style="color: lightcyan">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+    </div>
+  </ion-list>
 
 </ion-content>
 
-<ion-footer>
-  <ion-toolbar>
+<ion-header>
+  <ion-toolbar align="right">
     <ion-buttons>
-      <button ion-button style="color: blue" (click)="loginClicker()">
+      <ion-item align="left"><b>i-Charity</b></ion-item>
+      <button ion-button style="color: navy" (click)="loginClicker()" align="right">
         Login
       </button>
-      <button ion-button style="color: red" (click)="registerClicker()">
+      <button ion-button style="color: maroon" (click)="registerClicker()" align="right">
         Register
       </button>
     </ion-buttons>
   </ion-toolbar>
-</ion-footer>
+</ion-header>

@@ -1,40 +1,47 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar align="right">
         <ion-title>
             Profile
         </ion-title>
+        <img src="/assets/i-charity.png" style="background-color:snow" width="50">
     </ion-navbar>
 </ion-header>
 
-<ion-content align="left" style="background-color: lightslategray" padding>
+<ion-content align="center" style="background-color: lightslategray" padding>
     <ion-list>
         <div>
             <ion-img src="/assets/prof.png" width="200" height="200"></ion-img>
         </div>
-        <ion-title>
-            <b style="color:floralwhite">Name:</b> {{username}}
-        </ion-title>
-        <ion-title>
-            <b style="color:floralwhite">Email:</b> {{email}}
+        <ion-item style="background-color:rgb(211, 238, 248)" padding>
+            <b style="color: black">Name:</b>
+            <p style="color:black">{{username}}</p>
+        </ion-item>
+        <ion-item style="background-color:rgba(159, 207, 247, 0.993)" padding>
+            <b style="color:black">Email:</b>
+            <p style="color:black">{{email}}</p>
 
-        </ion-title>
-        <ion-title>
-            <b style="color:floralwhite">Billing Address:</b> {{address}}
-        </ion-title>
+        </ion-item>
+        <ion-item style="background-color:steelblue" padding>
+            <b style="color:black">Billing Address:</b>
+            <p style="color:black">{{address}}</p>
+        </ion-item>
         <hr>
         <ion-buttons>
-            <button style="color:navy" (click)="charityList()">Subscribed Charities</button>
-            <br>
-            <button style="color:navy" (click)="charityList()">Donation History</button>
-            <br>
-            <button style="color:navy" (click)="charityList()">Settings</button>
+            <ion-item-divider style="color:navy" (click)="charityList()">
+                <b>Subscribed Charities</b>
+            </ion-item-divider>
+            <ion-item-divider style="color:navy" (click)="charityList()">
+                <b>Donation History</b>
+            </ion-item-divider>
+            <ion-item-divider style="color:navy" (click)="charityList()">
+                <b>Settings</b>
+            </ion-item-divider>
         </ion-buttons>
         <br>
         <br>
-        <button ion-button padding (click)="logout()"> Logout </button>
-
     </ion-list>
-
-
-
 </ion-content>
+
+<ion-footer align="center">
+    <button ion-button padding (click)="logout()"> Logout </button>
+</ion-footer>

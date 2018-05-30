@@ -13,14 +13,21 @@
 </ion-header>
 
 
-<ion-content style="background-color: lightslategray" padding>
-<h1>{{name}}</h1>
-<br>
-<br>
-<ion-title>Our Mission</ion-title>
-<p>{{mission}}</p>
-<br>
-<br>
-<h4>Contact us</h4>
-<p>{{contact}}</p>
+<ion-content align="center" style="background-color: lightslategray">
+  <ion-item-divider>
+    <h1 align="center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 50px">
+      <u>{{name}}</u>
+    </h1>
+  </ion-item-divider>
+  <br>
+  <ion-img padding align="center" height="200" width="200" src="/assets/placeholder.png"></ion-img>
+  <br>
+  <ion-list padding align="left">
+    <ion-item-divider style="color:snow; background-color: steelblue">Our Mission</ion-item-divider>
+    <p>{{mission}}</p>
+    <br>
+    <br>
+    <ion-item-divider style="color:snow; background-color: darkblue">Contact us</ion-item-divider>
+    <p>{{contact}}</p>
+  </ion-list>
 </ion-content>

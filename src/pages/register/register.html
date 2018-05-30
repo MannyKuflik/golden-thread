@@ -1,15 +1,16 @@
 <ion-header>
-    <ion-navbar>
+    <ion-navbar align="right">
         <ion-title>
             Logged on
         </ion-title>
+        <img src="/assets/i-charity.png" style="background-color:snow" width="50">
     </ion-navbar>
 </ion-header>
 
 <ion-content style="background-color: lightslategray" padding>
     <ion-list>
         <div padding style="color:whitesmoke">
-            <b>Personal Info</b>
+            <b style="font-size: 25px">Personal Info</b>
         </div>
 
         <ion-item>
@@ -33,7 +34,7 @@
         </ion-item>
         <br>
         <div padding style="color:whitesmoke">
-            <b>Billing Address</b>
+            <b style="font-size: 25px">Billing Address</b>
         </div>
 
         <ion-item>
@@ -49,6 +50,8 @@
 
     </ion-list>
     <div>
-        <button ion-button (click)="submitClicker()"> Join the Giving Community! </button>
+        <button ion-button (click)="submitClicker()">
+            <b>Join the Giving Community!</b>
+        </button>
     </div>
 </ion-content>
