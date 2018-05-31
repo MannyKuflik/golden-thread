@@ -1,59 +1,44 @@
+<ion-header>
+  <ion-navbar align="right">
+    <img src="/assets/cryptoLogo.png" height="50">
+    <ion-title>CryptoSafari</ion-title>
+  </ion-navbar>
+</ion-header>
 
-
-<ion-content style="background-color: lightslategray" padding>
-  <div align="center" >
-    <img padding  src="/assets/i-charity.png" style="width:75%; border:100px; background-color:snow">
-  </div>
-  <br>
-  <ion-list>
-    <ion-item-divider style="color: snow; background-color: steelblue">
-      <h1><b>Our Mission</b></h1>
-    </ion-item-divider>
-    <p style="color: lightcyan">
-      <b>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        <b style="color: midnightblue; font-size: 20px"> make the world a better place</b> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco
-        <i>laboris nisi ut aliquip ex ea commodo consequat</i>. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-        deserunt mollit anim id est laborum
-      </b>
-    </p>
-    <h6 style="color: skyblue; font-size: 30px">"Blah Blah Blah"</h6>
-    <div style="color: lightcyan">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-    </div>
-    <br>
-    <div style="color: lightcyan">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-    </div>
-    <br>
-    <div style="color: lightcyan">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-      cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-    </div>
-  </ion-list>
-
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-50>
+        <h1 style="font-size: 40px">Collectible.</h1>
+        <h1 style="font-size: 40px">Breedable.</h1>
+        <h1 style="font-size: 40px">Charitable.</h1>
+        <p style="color: gray">Wildlife conservation through collecting,breeding and selling digital animals.</p>
+      </ion-col>
+      <ion-col>
+        <img src="/assets/CryptoAnt.png">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-item-divider style="background-color: tomato"></ion-item-divider>
+  <ion-item-divider style="background-color: gold"></ion-item-divider>
+  <ion-item-divider style="background-color: lightgreen"></ion-item-divider>
+  <section padding align="left" style="background-color: forestgreen">
+    <h1 style="font-size: 45px; color:snow">What is CryptoSafari?</h1>
+    <p style="font-size: 22px; color:snow">CryptoSafari is a CryptoKitties inspired blockchaingame. You can buy,collect, breed and sell cute andadorable digital
+      animals that are unique, secured onthe blockchain and owned by you.</p>
+    <p style="font-size: 22px; color:snow">Once you bought an animal, 90% of proceeds gotoward charities of your choosing. Curate your ownCharity Portfolio from
+      over 50 world renownedcharities. The animal is now yours to keep, breed withto get new animals or you can sell it to
+      someone else. Profits of your sales and breeding go to you.</p>
+  </section>
 </ion-content>
 
-<ion-header>
-  <ion-toolbar align="right">
-    <ion-buttons>
-      <ion-item align="left"><b>i-Charity</b></ion-item>
-      <button ion-button style="color: navy" (click)="loginClicker()" align="right">
-        Login
-      </button>
-      <button ion-button style="color: maroon" (click)="registerClicker()" align="right">
-        Register
-      </button>
-    </ion-buttons>
+<ion-footer>
+  <ion-toolbar align="center">
+    <button ion-button style="background-color: firebrick; color:snow" (click)="loginClicker()" align="right">
+      <b>Login</b>
+    </button>
+    <button ion-button style="background-color: maroon; color:snow" (click)="registerClicker()" align="right">
+     <b>Register</b>
+    </button>
   </ion-toolbar>
-</ion-header>
+</ion-footer>

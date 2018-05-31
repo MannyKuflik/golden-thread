@@ -11,6 +11,10 @@ import { RegisterPage } from '../pages/register/register';
 import { ProfilePage } from '../pages/profile/profile';
 import { CharityListPage } from '../pages/charity-list/charity-list';
 import { CharityDetailsPage } from '../pages/charity-details/charity-details';
+import { DonationsPage } from '../pages/donations/donations';
+import { PercentagesPage } from '../pages/percentages/percentages';
+import { PayPlanPage } from '../pages/pay-plan/pay-plan';
+import { PayMethPage } from '../pages/pay-meth/pay-meth';
 
 @NgModule({
   declarations: [
@@ -20,7 +24,11 @@ import { CharityDetailsPage } from '../pages/charity-details/charity-details';
     RegisterPage,
     ProfilePage,
     CharityListPage,
-    CharityDetailsPage
+    CharityDetailsPage,
+    DonationsPage,
+    PercentagesPage,
+    PayPlanPage,
+    PayMethPage
   ],
   imports: [
     BrowserModule,
@@ -34,7 +42,11 @@ import { CharityDetailsPage } from '../pages/charity-details/charity-details';
     RegisterPage,
     ProfilePage,
     CharityListPage,
-    CharityDetailsPage
+    CharityDetailsPage,
+    DonationsPage,
+    PercentagesPage,
+    PayPlanPage,
+    PayMethPage
   ],
   providers: [
     StatusBar,

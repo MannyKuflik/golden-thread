@@ -1,0 +1,33 @@
+<!--
+  Generated template for the PayPlanPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>payPlan</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Amount: $</ion-label>
+    <ion-input floating type="text" [(ngModel)]="amount"></ion-input>
+  </ion-item>
+  <ion-list>
+    <ion-item>
+      <ion-label>Payment Method</ion-label>
+      <ion-select [(ngModel)]="method" interface="popover">
+        <ion-option value="p1">Visa xxx 4672</ion-option>
+        <ion-option value="p2">Amex xx 13022</ion-option>
+        <ion-option value="p3">Chase Bank #5628</ion-option>
+        <ion-option (click)="paymentMethod()" value="p4">Add Payment Method...</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  <button ion-button round (click)="backTo()"> Submit </button>
+</ion-content>

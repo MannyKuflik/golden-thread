@@ -4,6 +4,7 @@ import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
 import { LoginPage } from '../loginScreen/loginScreen';
 import { CharityListPage } from '../charity-list/charity-list';
+import { DonationsPage } from '../donations/donations';
 
 
 @Component({
@@ -29,6 +30,10 @@ export class ProfilePage {
 
   charityList(){
     this.navCtrl.push(CharityListPage);
+  }
+
+  donations(){
+    this.navCtrl.push(DonationsPage);
   }
 
 }

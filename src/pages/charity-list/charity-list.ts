@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CharityDetailsPage } from '../charity-details/charity-details';
+import { DonationsPage } from '../donations/donations';
 
 /**
  * Generated class for the CharityListPage page.
@@ -47,7 +48,7 @@ export class CharityListPage {
         "reprehenderit in voluptate velit esse cillum dolore eu fugiat" +
         " nulla pariatur. Excepteur sint occaecat cupidatat non proident," +
         " sunt in culpa qui officia deserunt mollit anim id est laborum ",
-      contact: "Phone: 1-8888-678-2314 | Address: 111 41st St, Phildelphia, PA, USA 10904"
+      contact: "Phone: 1-888-678-2314 | Address: 111 41st St, Phildelphia, PA, USA 10904"
     },
     {
       id: 4, name: "Charity D", mission: "We help the environment... Lorem ipsum " +
@@ -67,8 +68,11 @@ export class CharityListPage {
   mission: string;
   contact: string;
 
+  tabs:string;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.tabs = "projects";
   }
 
   ionViewDidLoad() {
@@ -79,6 +83,10 @@ export class CharityListPage {
     this.navCtrl.push(CharityDetailsPage, {
       name: this.item[num].name, mission: this.item[num].mission, contact: this.item[num].contact
     });
+  }
+
+  donations(){
+    this.navCtrl.push(DonationsPage);
   }
 
 }

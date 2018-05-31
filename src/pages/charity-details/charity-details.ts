@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CharityListPage } from '../charity-list/charity-list';
+import { DonationsPage } from '../donations/donations';
+import { PayPlanPage } from '../pay-plan/pay-plan';
 
 /**
  * Generated class for the CharityDetailsPage page.
@@ -28,6 +30,10 @@ export class CharityDetailsPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CharityDetailsPage');
+  }
+
+  paymentDets(){
+    this.navCtrl.push(PayPlanPage);
   }
 
 }

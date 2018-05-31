@@ -13,7 +13,7 @@
 </ion-header>
 
 
-<ion-content align="center" style="background-color: lightslategray">
+<ion-content align="center">
   <ion-item-divider>
     <h1 align="center" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 50px">
       <u>{{name}}</u>
@@ -22,12 +22,31 @@
   <br>
   <ion-img padding align="center" height="200" width="200" src="/assets/placeholder.png"></ion-img>
   <br>
-  <ion-list padding align="left">
-    <ion-item-divider style="color:snow; background-color: steelblue">Our Mission</ion-item-divider>
+  <ion-list align="left">
+    <ion-item-divider style="color:snow; background-color: goldenrod">Our Mission</ion-item-divider>
     <p>{{mission}}</p>
-    <br>
-    <br>
-    <ion-item-divider style="color:snow; background-color: darkblue">Contact us</ion-item-divider>
+    <ion-item-divider style="color:snow; background-color: forestgreen">Contact us</ion-item-divider>
     <p>{{contact}}</p>
   </ion-list>
+<section>
+  <h3>Get involved!</h3>
+  <hr>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button (click) ="paymentDets()">
+          <b style="font-size:30px; color: white">One Time Donation</b>
+        </button>
+      </ion-col>
+      <ion-col>
+        Or
+      </ion-col>
+      <ion-col>
+        <button style="background-color: tomato" (click)="paymentDets()">
+          <b style="font-size:30px; color: white">Monthly Payment Plan</b>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</section>
 </ion-content>

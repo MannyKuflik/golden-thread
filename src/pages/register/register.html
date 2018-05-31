@@ -1,16 +1,15 @@
 <ion-header>
     <ion-navbar align="right">
-        <ion-title>
-            Logged on
-        </ion-title>
-        <img src="/assets/i-charity.png" style="background-color:snow" width="50">
+        <img src="/assets/cryptoLogo.png" height="50">
+        <ion-title>CryptoSafari</ion-title>
     </ion-navbar>
 </ion-header>
 
-<ion-content style="background-color: lightslategray" padding>
+<ion-content padding>
     <ion-list>
-        <div padding style="color:whitesmoke">
-            <b style="font-size: 25px">Personal Info</b>
+        <b style="font-size: 50px">Personal Info</b>
+        <div padding style="color: grey">
+            <b style="font-size: 35px">Personal Info</b>
         </div>
 
         <ion-item>
@@ -33,8 +32,8 @@
             <ion-input type="password" placeholder="Confirm Password"></ion-input>
         </ion-item>
         <br>
-        <div padding style="color:whitesmoke">
-            <b style="font-size: 25px">Billing Address</b>
+        <div padding style="color:grey">
+            <b style="font-size: 35px">Billing Address</b>
         </div>
 
         <ion-item>
@@ -50,7 +49,7 @@
 
     </ion-list>
     <div>
-        <button ion-button (click)="submitClicker()">
+        <button ion-button (click)="submitClicker()" style="background-color: firebrick; color:white">
             <b>Join the Giving Community!</b>
         </button>
     </div>

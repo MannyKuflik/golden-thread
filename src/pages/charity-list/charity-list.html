@@ -7,15 +7,22 @@
 <ion-header>
 
   <ion-navbar align="right">
-    <ion-title>Charities List</ion-title>
-    <img src="/assets/i-charity.png" style="background-color:snow" width="50">
+      <ion-title>CryptoSafari</ion-title><img src="/assets/cryptoLogo.png" height="50">
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content align="left " style="background-color: lightslategray" padding>
-  <ion-list>
+<ion-content align="center" padding>
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="portfolio" (click)="donations()">
+      Portfolio
+    </ion-segment-button>
+    <ion-segment-button value="projects">
+      Conservation Projects
+    </ion-segment-button>
+  </ion-segment>
+  <ion-list padding>
     <button id=0 ion-item (click)="charityClick(0)">
       <ion-img align="center" height="25" width="25" src="/assets/placeholder.png"></ion-img>
       <label padding style="font-size: 20px">~ Charity A ~</label>

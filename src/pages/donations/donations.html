@@ -1,0 +1,62 @@
+<!--
+  Generated template for the DonationsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar align="right">
+      <ion-title>CryptoSafari</ion-title> <img src="/assets/cryptoLogo.png" height="50">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content align="center" padding>
+  <ion-segment [(ngModel)]="tabs">
+    <ion-segment-button value="portfolio">
+      Portfolio
+    </ion-segment-button>
+    <ion-segment-button (click)="projects()">
+      Conservation Projects
+    </ion-segment-button>
+  </ion-segment>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-avatar item-start align="left">
+          <img src="assets/avatar.png">
+        </ion-avatar>
+        <p>First Last</p>
+        <p>City, Country</p>
+      </ion-col>
+      <ion-col>
+        <div>
+          <br>
+          <h6>$ xxxx</h6>
+          <p>Raised for conservation</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <br>
+          <h6>##</h6>
+          <p>conservation projects</p>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <br>
+          <h6>##</h6>
+          <p>Animals in nature reserve</p>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <hr>
+  <button ion-button round style="background-color: saddlebrown" (click)="percentages()">Adjust percentages</button>
+  <section class="chart-wrapper">
+    <canvas #pieChart></canvas>
+  </section>
+</ion-content>

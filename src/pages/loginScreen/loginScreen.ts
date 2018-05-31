@@ -27,4 +27,8 @@ public password: string;
     alert("username: " + this.username + ", password: " + this.password);
   }
 
+  forgotPassword(){
+this.password = "your password";
+  }
+
 }
