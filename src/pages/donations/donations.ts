@@ -167,7 +167,7 @@ export class DonationsPage {
   }
 
   projects() {
-    this.navCtrl.push(PayMethPage);
+    this.navCtrl.push(CharityListPage);
   }
 
 }
