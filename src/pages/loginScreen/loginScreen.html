@@ -16,9 +16,18 @@
             <ion-input type="password" placeholder="Password" [(ngModel)]="password"></ion-input>
         </ion-item>
         <br>
-        <button ion-button style="background-color: red; color: white" (click)="profileSend()">
-            Go
-        </button>
+        <ion-grid>
+            <ion-row>
+                <ion-col col-3>
+                    <button ion-button padding style="background-color: red; color: white" (click)="profileSend()">
+                        Go
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <iframe width="100%" height="80" src="https://lottiefiles.com/iframe/1138-deer" frameborder="0" allowfullscreen></iframe>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
     </ion-list>
 
     <p style="color: tomato">

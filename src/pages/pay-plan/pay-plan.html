@@ -14,6 +14,13 @@
 
 
 <ion-content padding>
+    <ion-item>
+        <ion-label>Donation Type</ion-label>
+        <ion-select [(ngModel)]="freq">
+          <ion-option value="f1">One-time Donation</ion-option>
+          <ion-option value="f2">Monthly Donation Plan</ion-option>
+        </ion-select>
+      </ion-item>
   <ion-item>
     <ion-label>Amount: $</ion-label>
     <ion-input floating type="text" [(ngModel)]="amount"></ion-input>
@@ -29,5 +36,5 @@
       </ion-select>
     </ion-item>
   </ion-list>
-  <button ion-button round (click)="backTo()"> Submit </button>
+  <button ion-button round (click)="backTo()"> Submit </button> 
 </ion-content>

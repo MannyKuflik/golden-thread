@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CharityDetailsPage } from '../charity-details/charity-details';
 import { DonationsPage } from '../donations/donations';
+import { Charity } from '../../objects/charity';
+import { User } from '../../objects/user';
 
 /**
  * Generated class for the CharityListPage page.
@@ -16,6 +18,9 @@ import { DonationsPage } from '../donations/donations';
 })
 export class CharityListPage {
 
+  public user: User = new User();
+  public charities: Array<Charity> = [];
+  
   item = [
     {
       id: 1, name: "Charity A", mission: "We help people... Lorem ipsum " +
@@ -68,7 +73,7 @@ export class CharityListPage {
   mission: string;
   contact: string;
 
-  tabs:string;
+  tabs: string;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -85,7 +90,7 @@ export class CharityListPage {
     });
   }
 
-  donations(){
+  donations() {
     this.navCtrl.push(DonationsPage);
   }
 

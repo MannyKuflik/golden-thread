@@ -15,7 +15,7 @@ import { DonationsPage } from '../donations/donations';
 })
 export class PayPlanPage {
 
-  amount:number;
+  amount: number;
   method: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -26,8 +26,13 @@ export class PayPlanPage {
   }
 
   backTo(){
+    if (this.amount > 0) {
     alert("Thanks for contributing towards saving the world!")
     this.navCtrl.push(DonationsPage)
+    }
+    else {
+      alert("Invalid input, please input a valid number")
+    }
   }
 
   paymentMethod(){
