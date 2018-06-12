@@ -15,6 +15,7 @@ import { DonationsPage } from '../pages/donations/donations';
 import { PercentagesPage } from '../pages/percentages/percentages';
 import { PayPlanPage } from '../pages/pay-plan/pay-plan';
 import { PayMethPage } from '../pages/pay-meth/pay-meth';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { PayMethPage } from '../pages/pay-meth/pay-meth';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

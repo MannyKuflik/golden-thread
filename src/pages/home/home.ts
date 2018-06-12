@@ -4,6 +4,8 @@ import { LoginPage } from '../loginScreen/loginScreen';
 import { RegisterPage } from '../register/register';
 import { ProfilePage } from '../profile/profile';
 import { User } from '../../objects/user';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'page-home',
@@ -13,8 +15,7 @@ export class HomePage {
 
   public user: User = new User();
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
   }
 
   loginClicker() {

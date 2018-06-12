@@ -9,6 +9,7 @@ import { Chart } from '../../../node_modules/chart.js';
 import { PercentagesPage } from '../percentages/percentages';
 import { CharityListPage } from '../charity-list/charity-list';
 import { PayMethPage } from '../pay-meth/pay-meth';
+import { ProfilePage } from '../profile/profile';
 
 
 @Component({
@@ -164,6 +165,10 @@ export class DonationsPage {
 
   percentages() {
     this.navCtrl.push(PercentagesPage);
+  }
+
+  profile() {
+    this.navCtrl.push(ProfilePage);
   }
 
   projects() {

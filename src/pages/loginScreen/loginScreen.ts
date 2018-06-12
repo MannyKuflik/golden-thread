@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { RegisterPage } from '../register/register';
 import { HomePage } from '../home/home';
-import { ProfilePage } from '../profile/profile';
+import { DonationsPage } from '../donations/donations';
 import { User } from '../../objects/user';
+import { Http } from '@angular/http';
 
 
 @Component({
@@ -17,7 +18,7 @@ export class LoginPage {
   public username: string;
   public password: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
     if (this.navParams.get('user')) {
       let user = this.navParams.get('user');
       //this.user.email = user.email;
@@ -28,10 +29,23 @@ export class LoginPage {
   }
 
   profileSend() {
-    this.navCtrl.push(ProfilePage
-      , {
-        user: this.user
-      });
+    this.http
+      .post("http://localhost:3000/login", {
+        email: this.username,
+        password: this.password
+      })
+      .subscribe(
+        result => {
+          console.log(result);
+          this.navCtrl.push(DonationsPage
+            , {
+              user: this.user
+            });
+        },
+        error => {
+          alert("Invalid Credentials");
+          console.log(error);
+        });
   }
 
   alert() {
