@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Payment Screen
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="gray-bg">
+    <p class="center">
+        <ion-icon class="icon-large" name="card"></ion-icon>
+    </p>
+    <section>
+ 
+            <form action="/" method="post" id="payment-form">
+            
+              <div class="form-row">
+                <div id="card-element">
+                  <!-- a Stripe Element will be inserted here. -->
+                </div>
+          
+                <!-- Used to display Element errors -->
+                <div id="card-errors" role="alert"></div>
+              </div>
+          
+            <button ion-button block large>Add Card</button>
+              
+            </form>
+         
+        </section>
+    <!-- <ion-card>
+        <ion-card-content>
+            <ion-list>
+                <ion-item>
+                    <ion-input type="number" name="cc" [(ngModel)]="ngForm.cc" placeholder="Number"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="number" name="cvc" [(ngModel)]="ngForm.cvc" placeholder="CVC"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input item-left type="number" name="month" [(ngModel)]="ngForm.month" placeholder="Month"></ion-input>
+                    <ion-input item-right type="number" name="year" [(ngModel)]="ngForm.year" placeholder="Year"></ion-input>
+                </ion-item>
+                <button type="button" ion-button bottom block (click)="onSubmit()">Pay $20</button>
+            </ion-list>
+        </ion-card-content>
+    </ion-card> -->
+</ion-content>

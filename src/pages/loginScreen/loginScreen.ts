@@ -5,6 +5,7 @@ import { HomePage } from '../home/home';
 import { DonationsPage } from '../donations/donations';
 import { User } from '../../objects/user';
 import { Http } from '@angular/http';
+import { AuthServ } from '../../authserv';
 
 
 @Component({
@@ -18,7 +19,7 @@ export class LoginPage {
   public username: string;
   public password: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public http: Http, public authService: AuthServ) {
     if (this.navParams.get('user')) {
       let user = this.navParams.get('user');
       //this.user.email = user.email;
@@ -29,23 +30,13 @@ export class LoginPage {
   }
 
   profileSend() {
-    this.http
-      .post("http://localhost:3000/login", {
-        email: this.username,
-        password: this.password
-      })
-      .subscribe(
-        result => {
-          console.log(result);
-          this.navCtrl.push(DonationsPage
-            , {
-              user: this.user
-            });
-        },
-        error => {
-          alert("Invalid Credentials");
-          console.log(error);
-        });
+    let cb = (err) => {
+      if (err) {
+        return;
+      }
+      this.navCtrl.push(DonationsPage);
+    }
+    this.authService.login(this.username, this.password, cb)
   }
 
   alert() {
@@ -53,7 +44,8 @@ export class LoginPage {
   }
 
   forgotPassword() {
-    this.password = "your password";
+    this.username = "string"
+    this.password = "string";
   }
 
 }

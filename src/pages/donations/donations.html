@@ -7,7 +7,8 @@
 <ion-header>
 
   <ion-navbar align="right">
-      <ion-title>CryptoSafari</ion-title> <img src="/assets/cryptoLogo.png" height="50">
+    <ion-title>CryptoSafari</ion-title>
+    <img src="/assets/cryptoLogo.png" height="50">
   </ion-navbar>
 
 </ion-header>
@@ -58,5 +59,9 @@
   <button ion-button round style="background-color: saddlebrown" (click)="percentages()">Adjust percentages</button>
   <section class="chart-wrapper">
     <canvas #pieChart></canvas>
+  </section>
+  <p> <b>  <p> {{ detailing }} (read token) {{ name }}</p></b></p>
+  <section align="center">
+    <button ion-button style="background-color: firebrick; color:snow" (click)="logout()"> Logout </button>
   </section>
 </ion-content>

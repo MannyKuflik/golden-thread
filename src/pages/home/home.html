@@ -6,8 +6,7 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-item *ngFor="let post of posts">
-        <img [src]="post.data.url" /> </ion-item>
+  <button ion-button (click)="stripe()">Pay now</button>
   <ion-grid>
     <ion-row>
       <ion-col col-40>

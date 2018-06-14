@@ -15,7 +15,11 @@ import { DonationsPage } from '../pages/donations/donations';
 import { PercentagesPage } from '../pages/percentages/percentages';
 import { PayPlanPage } from '../pages/pay-plan/pay-plan';
 import { PayMethPage } from '../pages/pay-meth/pay-meth';
+import { ThankyouPage } from '../pages/thankyou/thankyou';
 import { HttpModule } from '@angular/http';
+import { Camera } from '@ionic-native/camera';
+import { StripePage } from '../pages/stripe/stripe';
+import { AuthServ } from '../authserv'
 
 @NgModule({
   declarations: [
@@ -29,7 +33,9 @@ import { HttpModule } from '@angular/http';
     DonationsPage,
     PercentagesPage,
     PayPlanPage,
-    PayMethPage
+    PayMethPage,
+    ThankyouPage,
+    StripePage
   ],
   imports: [
     BrowserModule,
@@ -48,11 +54,15 @@ import { HttpModule } from '@angular/http';
     DonationsPage,
     PercentagesPage,
     PayPlanPage,
-    PayMethPage
+    PayMethPage,
+    ThankyouPage,
+    StripePage
   ],
   providers: [
+    Camera,
     StatusBar,
     SplashScreen,
+    AuthServ,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

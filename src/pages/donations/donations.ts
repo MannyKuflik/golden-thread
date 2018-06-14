@@ -10,6 +10,8 @@ import { PercentagesPage } from '../percentages/percentages';
 import { CharityListPage } from '../charity-list/charity-list';
 import { PayMethPage } from '../pay-meth/pay-meth';
 import { ProfilePage } from '../profile/profile';
+import { HomePage } from '../home/home';
+import { sign, verify, decode} from 'jsonwebtoken';
 
 
 @Component({
@@ -26,8 +28,12 @@ export class DonationsPage {
   per_b: number;
   per_c: number;
   per_d: number;
+  
+  name: string;
 
   tabs: string;
+
+  token: string;
 
   public charities: any = {
     "charities": [
@@ -65,11 +71,15 @@ export class DonationsPage {
   public chartColours: any = [];
   public chartHoverColours: any = [];
   public chartLoadingEl: any;
-
+detailing: string;
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams) {
       this.tabs = "portfolio";
+      var token = localStorage.getItem("TOKEN");
+      var details = decode(token);
+      this.detailing = token;
+      this.name = (details as any).user.username;
      }
 
   ionViewDidLoad() {
@@ -77,6 +87,11 @@ export class DonationsPage {
     this.createPieChart();
     this.createBarChart();
     this.createLineChart();
+  }
+
+  logout() {
+    localStorage.clear();
+    this.navCtrl.push(HomePage);
   }
 
 
